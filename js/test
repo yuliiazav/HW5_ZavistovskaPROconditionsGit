@@ -1,0 +1,89 @@
+
+
+
+
+
+
+
+
+
+
+
+
+    let numFirst = +prompt('Enter your first number');
+    while(isNaN(numFirst)) {
+        alert('enter valid numbers only!');
+        numFirst = +prompt('Enter your first number');
+    }
+    let numSecond = +prompt('Enter your second number');
+   while(isNaN(numSecond)) {
+        alert('enter valid numbers only!');
+       numSecond = +prompt('Enter your second number');
+    }
+    let operator = prompt('Choose an operation (+, -, *, /)');
+    while (operator !== '+' && operator !== '-' && operator !== '*' && operator !== '/') {
+        alert('This operation does not exist. Try again!');
+        operator = prompt('Choose an operation (+, -, *, /)');
+    }
+    let result = calcResult(numFirst, numSecond, operator);
+
+
+
+         alert(`Your result is ${result}`);
+
+
+
+    function calcResult(numFirst, numSecond, operator) {
+        switch (operator) {
+            case '+':
+                return numFirst + numSecond;
+            case '-':
+                return numFirst - numSecond;
+            case '*':
+                return numFirst * numSecond;
+            case '/':
+                return numFirst / numSecond;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
